@@ -24,6 +24,18 @@ namespace Hello
             {
                 Console.WriteLine(item.name + " :" + item.grade);
             }
+
+            for(int i = 0; i< list.Count; i++)
+            {
+                if (list[i].grade>1)
+                    list.RemoveAt(i);
+            }
+            //foreach(var item in list)
+            //{
+            //    if (item.grade > 1)
+            //        list.RemoveAt(item);
+            //}
         }
+
     }
 }
